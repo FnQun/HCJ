@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +10,14 @@
 		margin: 0;
 		font: 14px "微软雅黑";
 	}
+	h1,p{
+		text-align: center;
+	}
 	.box{
 		box-sizing: border-box;
 		height: 300px;
 		width: 574px;
+		margin: 0 auto;
 		border: 1px solid #999;
 	}
 	.nav{
@@ -36,6 +41,7 @@
 		line-height: 33px;
 		display:inline-block;
 		text-decoration: none;
+		color: #cecece;
 	}
 	.content{
 		height: 263px;
@@ -48,13 +54,16 @@
 		width: 532px;
 		padding: 20px;
 	}
-	.nav li:visited,.nav li:hover{
+	.nav li a:hover,.nav li:hover{
+		color: black;
 		background-color: white;
-		border-bottom:1px solid #ffffff;
+		border-bottom:transparent;
 	}
 	</style>
 </head>
 <body>
+	<h1>CSS Tabs</h1>
+	<p>只有IE支持a标签的4中伪类的状态,chrome和Firefox仅支持两种</p>
 <div class="box">
 	<ul class="nav">
     	<li><a href="#tab1">课程</a></li>
@@ -62,9 +71,9 @@
         <li><a href="#tab3">技能图谱</a></li>
     </ul>
     <div class="content">
-    	<div id="tab1">内容</div>
-        <div id="tab2">计划</div>
-        <div id="tab3">技能</div>
+    	<div id="tab1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis adipiscing risus, porttitor viverra urna condimentum et. Donec vestibulum lacus vel dolor dictum pellentesque. Aliquam sodales sem quis urna condimentum, sit amet elementum magna semper.</div>
+        <div id="tab2">Aliquam condimentum hendrerit nisi, nec vestibulum mi feugiat ut. Donec lobortis nisi neque, in egestas eros venenatis eu. Vestibulum nulla nisi, venenatis at pretium id, fermentum quis risus. Quisque porta suscipit neque eu placerat. Etiam scelerisque, quam in sodales iaculis, velit velit mattis nunc, quis dapibus massa elit nec enim. Vivamus quis libero aliquam, volutpat nisl sed, consectetur ante. Donec aliquam semper felis, in placerat leo blandit in. Integer interdum elit quis felis tempor venenatis. In faucibus ac mauris id commodo. </div>
+        <div id="tab3">Fusce pulvinar porttitor dui, eget ultrices nulla tincidunt vel. Suspendisse faucibus lacinia tellus, et viverra ligula. Suspendisse eget ipsum auctor, congue metus vel, dictum erat. Aenean tristique euismod molestie. Nulla rutrum accumsan nisl, ac semper sapien tincidunt et. Praesent tortor risus, commodo et sagittis nec, aliquam quis augue. Aenean non elit elementum, tempor metus at, aliquam felis.</div>
     </div>
 </div>
 </body>
