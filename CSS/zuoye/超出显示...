@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSSzuoye</title>
+	<style type="text/css">
+        div{
+		width: 200px;
+        }
+        p{
+        	overflow: hidden;
+        	white-space: nowrap;
+        	font: bold 16px/25px "宋体";
+        	text-overflow: ellipsis;
+        	display: block;
+        }
+	</style>
+</head>
+<body>
+	<div>
+		<p>我是一个长长长长长长长长标题</p>
+	</div>
+</body>
+</html>
