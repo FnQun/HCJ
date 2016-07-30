@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xiala2</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .sabar{
+        width: 100px;
+    }
+    .btn{
+        width: 50px;
+        height: 28px;
+        font: 12px "宋体";
+        border: 1px solid #ddd;
+        background-color: #eee;
+    }
+     a{
+        font: 12px "宋体";
+        color: black;
+        text-decoration: none;
+     }
+    .downt{
+        margin-top: 1px;
+        display: none;
+    }
+    .downt li{
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        border: 1px solid #ddd;
+        background-color: white;
+    }
+    .downt li:nth-child(-n+3){
+        border-bottom: transparent;
+    }
+    .sabar li:hover ul{
+        display: block;
+    }
+    .downt li:hover{
+         background-color: #ddd;
+    }
+    </style>
+</head>
+<body>
+<ul class="sabar">
+    <li><button class="btn">按钮</button>
+        <ul class="downt">
+            <li><a href="#">下拉菜单项</a></li>
+            <li><a href="#">下拉菜单项</a></li>
+            <li><a href="#">下拉菜单项</a></li>
+            <li><a href="#">下拉菜单项</a></li>
+        </ul></li>
+</ul>
+</body>
+</html>
