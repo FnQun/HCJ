@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+if( typeof Object.create != 'function'){
+
+    Object.create = function(obj){
+        if( typeof obj != 'object' ){
+            throw TypeError('Object prototype may only be an Object or null')
+        }
+        var back = function(){}
+        back.prototype = obj
+        return back;
+    }
+
+}
+
+var a = Object.create({x:1,y:2})
+alert(a.y)
+	</script>
+</body>
+</html>
