@@ -7,10 +7,10 @@
 <body>
 	<script>
 function parseQuery(query) {
-	var sp = query.replace(/([name]*).?([^\&]*).?([age]*).([\d]*).?([gender]*).?([\w]*)/,'$1:"$2",$3:"$4",$5:"$6"');
+	var sp = query.replace(/([\w^.]*).([\w^.]*)./g,'$1:"$2",');
 	return sp;
 }
-var tom = parseQuery("name= tom &age=12&gender&");
+var tom = parseQuery("name=tom&age=12&gender=&");
 	tom;
 	</script>
 </body>
