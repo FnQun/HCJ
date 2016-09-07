@@ -36,3 +36,19 @@
  3.尽量避免Hack;  
  4.模块化管理；  
  5.添加注释。  
+###3.页面布局  
+####水平居中
+*1.行级元素 添加元素css样式：`text-align:center;`  
+*2.块级元素  
+	*定宽的块级元素：`width:200px;margin:20px auto;`  
+	*非定宽的块级元素：  
+	（1）.`display:table` 或者加入 `table` 标签 利用`table`标签的长度自适应性,然后再利用定宽度块状居中的margin的方法，使其水平居中。
+	（2）.设置`display: inline`显示类型设为行内元素，进行不定宽元素的属性设置，然后使用 `text-align:center` 来实现居中效果。  
+	（3）.设置 `position:relative` 和 `left:50%` 及transform:translateX:-50%利用 相对定位 的方式，将元素向左偏移 50%，再倒回自身50%的宽度,即达到居中的目的  
+####垂直居中  
+	*1、父元素高度确定的*单行文本* 通过设置父元素的` height` 和 `line-height `高度一致来实现的。  
+	*2.父元素高度确定的多行文本、图片等的竖直居中  
+		1.使用插入 `完整的table 包括thead tbody、tr、td`标签，或则`display:table-cell`同时设置 `vertical-align：middle`。在父元素设置此样式时，会作用于inline-block类型的子元素。  
+	*3.`设置position:relative;top:50%;及transform:translateY-50%;`再倒回自身50%的高度,即达到垂直居中的目的  
+####水平垂直居中  
+	*结合上面两部分一起使用
