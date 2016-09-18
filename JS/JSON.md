@@ -18,7 +18,7 @@ age: 1
 > JS- - - - -1. 不会报错  
 > JSON- - 1. 会报错
 
-* JSON方法  
+2. JSON方法  
 `JSON.parse(text[,reviver])`
 ```
 graph LR
