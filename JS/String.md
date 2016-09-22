@@ -92,6 +92,7 @@
 `String()`
 + `String(121)` `//"121"`
 + `String(null)` `// "null"`
-+ `String(undefined)` `// "undefined"`
++ `String(undefined)` `// "undefined"`  
+
 ###### 字符串内转义
 `"str\"ing" // "str"ing"`
