@@ -2,4 +2,4 @@
 text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
-<!-- 截取溢出文本,显示为... -->
+/* <!-- 截取溢出文本,显示为... --> */
