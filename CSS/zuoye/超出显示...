@@ -8,11 +8,13 @@
 		width: 200px;
         }
         p{
+		font: bold 16px/25px "宋体";
+		display: block;
+		<--! below core code-->
         	overflow: hidden;
-        	white-space: nowrap;
-        	font: bold 16px/25px "宋体";
+        	white-space: nowrap;        	
         	text-overflow: ellipsis;
-        	display: block;
+        	
         }
 	</style>
 </head>
